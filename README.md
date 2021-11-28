@@ -46,7 +46,8 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 2) Have all the layer folders done? Great! Now open the "config.json" file inside the same "setup" folder with a program la VSCode or Notepad++ and write the order of the layers from back to front,
 	it should look something like this:
-![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/layersOrder.PNG?token=AWPD7XQ3S3WDGHOJBMXGRJDBUOWBK)
+
+    ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/layersOrder.PNG?token=AWPD7XQ3S3WDGHOJBMXGRJDBUOWBK)
 
 3) We that we have all the layers set up, it's time to add some assets, get yours and put them in their respective folder, named like this: <YOUR_ASSET_VALUE#RARITY.png>, for example: "Berserker Blue#1.png".
 	The asset name is self explanatory, but what about the rarity? it's simple, if all the rarities add up to 100 it's like a percent, 0.1 meaning that 0.1% of NFTs will have this asset, but if they don't add up to 100 you can see
