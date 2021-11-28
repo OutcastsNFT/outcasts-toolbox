@@ -105,7 +105,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 - Made an error when you've written the config metadata for your NFTs? or you came up with better ones? This tool is for fixing that. Write all the variables and their new data inside the "updateMetadataVariables.json" file. 
     It should look somthing like this:
 
-- Keep in mind, if you're changing the name variable it will will look like this: "Outcast #" and it will give this output for example -> "Outcast #1". It modifies the prefix of the variable, it allways ending in the iteration number.
+- Keep in mind, if you're changing the name variable it will will look like this: "Outcast #" and it will give this output for example -> "Outcast #1". It modifies the prefix, it allways ending in the iteration number.
 
 ****
 ### THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
