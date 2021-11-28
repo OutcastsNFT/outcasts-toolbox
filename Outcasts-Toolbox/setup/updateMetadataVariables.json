@@ -1,8 +1,8 @@
 {
     "collection": {
-        "name": "test col",
+        "name": "updating collection name",
         "family": "The Outcasts"
     },
-    "description": "Test new nft update",
+    "description": "updated nft description",
     "name": "Outcast #"
 }
