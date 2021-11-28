@@ -61,7 +61,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 8) Set the "creators" and "royaltiesPercentage", this is for the royalties, for more info on this check this out: https://medium.com/metaplex/metaplex-metadata-standard-45af3d04b541; The roayltiesPercentage is * 100 so 500 = 5%;
 
 > !!!WARNING!!!
-> 	This is a probability game so if you put for example: 0.1 as rarity and you generate 3333 NFTs, that trait can appear anywhere from 0 times to 3-4 times. So just keep that in mind.
+> 	This is a probability game so if you put for example: 0.1 as rarity and you generate 3333 NFTs, that asset can appear anywhere from 0 times to 3-4 times. So just keep that in mind.
 
 9) Generation: if you are on windows you can simply run the "Start Generation.bat" file, it will prompt you to choose whether to use the rarities you set up in step 3) or to let the program randomly decide the rarities.
 	If you are not on windows, open a terminal in the "Outcasts-Toolbox" folder and run this command:
