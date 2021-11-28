@@ -84,7 +84,7 @@ This tool was made with inspiration from the hashlips-art-engine.
     ```
     The program generates a rarity table that looks something like this by default:
 
-    **This is dummy data**
+    **-- This is dummy data from a test--**
 
     ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/rarityPreview.png?token=AWPD7XTQ3PSEMEUXVYBL2VDBUOUBU)
     
