@@ -89,7 +89,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 
     ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/rarityPreview.png?token=AWPD7XRRLTHOGAXCFHUZDS3BUOWBY)
     
-- Keep in mind you can customize the colors, how many assets are displayed per column (rowsPerColumn) and fost sizes inside the "previewConfig.json" file next to "config.json". Feel free to be creative with it! :)
+- Keep in mind you can customize the colors, how many assets are displayed per column (rowsPerColumn) and font sizes inside the "previewConfig.json" file next to "config.json". Feel free to be creative with it! :)
 - You can also go into the createRarityPreview.js file in the "tools" folder and modify the rarity threshholds (line: 51) if you want to set the rarity types to different percentages. (exotic, legendary, epic, etc.)
 ****
 ### THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
