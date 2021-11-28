@@ -3,7 +3,7 @@
 ### This is a ToolBox for creating awesome generative projects on Solana
 Made with love by the Outcasts team ❤️
 
-![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/banner.jpeg?token=AWPD7XWRGDT5IQQHXTSVOJTBUOVS6)
+![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/banner.jpeg?token=AWPD7XQ77OU5K7NVP7E7Y7TBUOVZS)
 
 This tool was made with inspiration from the hashlips-art-engine.
 ## INSTALLATION
@@ -86,7 +86,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 
     **-- This is dummy data from a test--**
 
-    ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/rarityPreview.png?token=AWPD7XTQ3PSEMEUXVYBL2VDBUOUBU)
+    ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/rarityPreview.png?token=AWPD7XWP3KJNTKWEBPAKEHDBUOVYO)
     
 - Keep in mind you can customize the colors, how many assets are displayed per column (rowsPerColumn) and fost sizes inside the "previewConfig.json" file next to "config.json". Feel free to be creative with it! :)
 - You can also go into the createRarityPreview.js file in the "tools" folder and modify the rarity threshholds (line: 51) if you want to set the rarity types to different percentages. (exotic, legendary, epic, etc.)
