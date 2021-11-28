@@ -8,7 +8,7 @@ const { printNFT } = require("./printNFT.js");
 const { getAssets } = require("./getAssets.js");
 
 const { configFile, exportNFTDir } = require("./setupWorkspace.js");
-const { assetsOrder, numberOfNFTs } = require(configFile);
+const { assetsOrder, numberOfNFTs, uniquePieces } = require(configFile);
 
 let dnaList = [];
 let _metadata = [];
@@ -52,7 +52,7 @@ const getRarity = (path) => {
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
 const randomRarity = () => {
@@ -82,30 +82,45 @@ const generateAssetData = (data, randomEnabled) => {
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
-const generateDna = (randomEnabled) => {
-    const data = generateAssetData(getAssets(), randomEnabled);
+const generateDna = (data, index, uniquePieces) => {
     const rarityIndexCoeficient = 10;
     let finalAttributes = [];
     let paths = [];
     let dna = '';
-    data.forEach((layer, key) => {
-        let rarityList = [];
-        let totalRarity = 0;
-        layer.forEach((asset) => {
-            for (let i = 0; i < asset.rarity * rarityIndexCoeficient; i++) {
-                rarityList.push(asset);
+    if (uniquePieces.filter(piece => piece.index === index).length === 1) {
+        const piece = uniquePieces.filter(piece => piece.index === index)[0];
+        const layers = Object.keys(piece.attributes);
+        data.forEach((layer, key) => {
+            const { name, path, index } = layer.filter(atr => atr.name === piece.attributes[layers[key]])[0];
+            const selectedAttribute = {
+                trait_type: layers[key],
+                value: name
             }
-            totalRarity += asset.rarity * rarityIndexCoeficient;
+            finalAttributes.push(selectedAttribute);
+            paths.push(path);
+            dna += index;
         })
-        const { name, path, index } = rarityList[getRandomInt(0, totalRarity - 1)];
-        const selectedAttribute = {
-            trait_type: assetsOrder[key],
-            value: name
-        }
-        finalAttributes.push(selectedAttribute);
-        paths.push(path);
-        dna += index;
-    })
+        console.log('\x1b[33m%s\x1b[0m', `\nGenerated unique piece with DNA: ${sha1(dna)} at index:`, index);
+    } else {
+        data.forEach((layer, key) => {
+            let rarityList = [];
+            let totalRarity = 0;
+            layer.forEach((asset) => {
+                for (let i = 0; i < asset.rarity * rarityIndexCoeficient; i++) {
+                    rarityList.push(asset);
+                }
+                totalRarity += asset.rarity * rarityIndexCoeficient;
+            })
+            const { name, path, index } = rarityList[getRandomInt(0, totalRarity - 1)];
+            const selectedAttribute = {
+                trait_type: assetsOrder[key],
+                value: name
+            }
+            finalAttributes.push(selectedAttribute);
+            paths.push(path);
+            dna += index;
+        })
+    }
     return { finalAttributes, dna: sha1(dna), paths };
 }
 
@@ -138,15 +153,32 @@ function printProgress(index, max, measured_time) {
     );
 }
 
+const generateUniquePieceIndexes = (uniqueNumber, numberOfNFTs) => {
+    let uniquePiecesList = [];
+    for (let i = 0; i < uniqueNumber; i++) {
+        let randomIndex = getRandomInt(0, numberOfNFTs - 1);
+        while (uniquePiecesList.filter(piece => piece.index === randomIndex).length !== 0) {
+            randomIndex = getRandomInt(0, numberOfNFTs - 1);
+        }
+        if (uniquePiecesList.filter(piece => piece.index === randomIndex).length === 0) {
+            uniquePiecesList.push({ index: randomIndex, attributes: uniquePieces[i]});
+        }
+    }
+    return uniquePiecesList;
+}
+
 const generateMetadata = async ({ randomEnabled }) => {
     let generatedData = 0;
     let attributesList = []
     let hasMeasuredTime = false;
     let measuredTime = new Date().getTime();
+    let uniqueIndexes = generateUniquePieceIndexes(uniquePieces.length, numberOfNFTs);
+    const assetData = generateAssetData(getAssets(), randomEnabled);
     console.log('Generating Attribute Combinations...', 'Random rarity:', randomEnabled ? 'ENABLED': 'DISABLED');
     while (generatedData < numberOfNFTs) {
-        const { finalAttributes, dna, paths } = generateDna(randomEnabled);
+        const { finalAttributes, dna, paths } = generateDna(assetData, generatedData, uniqueIndexes);
         if (dnaList.filter(dna_ => dna_ === dna).length === 0) {
+            dnaList.push(dna);
             attributesList.push(finalAttributes);
             _metadata.push(await printNFT(paths, generatedData, finalAttributes));
             if (generatedData + 1 === numberOfNFTs) fs.writeFileSync(
@@ -161,6 +193,15 @@ const generateMetadata = async ({ randomEnabled }) => {
             generatedData++;
         } else {
             console.log('DNA Exists, regenerating...')
+            if (uniqueIndexes.filter(piece => piece.index === generatedData).length === 1) {
+                let newArray = [];
+                uniqueIndexes.forEach((piece) => {
+                    if (piece !== uniqueIndexes.filter(piece => piece.index === generatedData)[0]) {
+                        newArray.push(piece);
+                    }
+                })
+                uniqueIndexes = newArray;
+            }
         }
     }
     console.log('\nGenerated ', attributesList.length, ' attribute combinations. ', 'Double checking for duplicates...');

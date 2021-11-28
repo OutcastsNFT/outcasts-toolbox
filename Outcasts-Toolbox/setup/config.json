@@ -5,7 +5,7 @@
         "width": 2048,
         "height": 2048
     },
-    "numberOfNFTs": 100,
+    "numberOfNFTs": 30,
     "assetsOrder": [
         "Background",
         "Holster",
@@ -14,6 +14,26 @@
         "Clothes",
         "Headwear",
         "Facewear"
+    ],
+    "uniquePieces": [
+        {
+            "Background": "Cyan Sunrise",
+            "Holster": "Long Sword Orange",
+            "Faction": "IGNIS",
+            "Tattoo": "All Seeing Eye Brown",
+            "Clothes": "Army Commander",
+            "Headwear": "Army",
+            "Facewear": "None"
+        },
+        {
+            "Background": "Cyan Sunrise",
+            "Holster": "Long Sword Orange",
+            "Faction": "IGNIS",
+            "Tattoo": "None",
+            "Clothes": "Army Commander",
+            "Headwear": "Army",
+            "Facewear": "None"
+        }
     ],
     "royaltiesPercentage": 500,
     "creators": [
