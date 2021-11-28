@@ -36,7 +36,7 @@ This tool was made with inspiration from the hashlips-art-engine.
     yarn install
     ```
 
-**Now you should have enerything set up and ready! :)**
+**Now you should have everything set up and ready! :)**
 
 ## USAGE
 ****
