@@ -2,8 +2,8 @@
 
 const path = require("path");
 
-const { getAssets } = require("../main/getAssets.js");
-const { exportNFTDir } = require("../main/setupWorkspace.js");
+const { getAssets } = require("./getAssets.js");
+const { exportNFTDir } = require("./setupWorkspace.js");
 
 const getNameFromPath = (path) => {
     let name = path.split('\\')[path.split('\\').length - 1];

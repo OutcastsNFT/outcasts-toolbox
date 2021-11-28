@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const { createCanvas, loadImage } = require("canvas");
 
-const { getRarityData } = require("./createRarityData.js");
+const { getRarityData } = require("../main/createRarityData.js");
 const { exportUtilityDir } = require("../main/setupWorkspace.js");
 
 const {
@@ -151,7 +151,7 @@ const executePreviewGeneration = async (rarityData) => {
     console.log(`Project preview image saved! Location: ${previewPath}`);
 }
 
-const generateRarityPreview = async () => {
+const generateRarityTable = async () => {
     const rarityData = getRarityData();
     await executePreviewGeneration(rarityData);
     console.log('\nPress any key to exit...');
@@ -160,4 +160,4 @@ const generateRarityPreview = async () => {
     process.stdin.on('data', process.exit.bind(process, 0));
 }
 
-generateRarityPreview();
+generateRarityTable();
