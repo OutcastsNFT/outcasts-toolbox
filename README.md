@@ -51,7 +51,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 3) We that we have all the layers set up, it's time to add some assets, get yours and put them in their respective folder, named like this: <YOUR_ASSET_NAME#RARITY.png>, for example: "Berserker Blue#1.png".
 	The asset name is self explanatory, but what about the rarity? it's simple, if all the rarities add up to 100 it's like a percent, 0.1 meaning that 0.1% of NFTs will have this asset, but if they don't add up to 100 you can see
-	the percentage using this formula: RARITY_IN_PERCENT = (RARITY * SUM_OF_ALL_RARITIES) / 100. Too keep things simple we recommend setting them so that they add up to 100.
+	the percentage using this formula: RARITY_IN_PERCENT = RARITY * 100 / SUM_OF_ALL_RARITIES. Too keep things simple we recommend setting them so that they add up to 100.
 	
 4) Set the number of NFTs you want to generate: in the same "config.json" set the "numberOfNFTs" to the number you want to generate.
 
