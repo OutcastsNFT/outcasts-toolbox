@@ -37,6 +37,9 @@ This tool was made with inspiration from the hashlips-art-engine.
 **Now you should have everything set up and ready! :)**
 
 ## USAGE
+
+- All ".bat" files can be found inside the Runnables folder.
+
 ### GENERATION
 
 1) Setting up the layers: Go to the "setup" folder inside "Outcasts-Toolbox" then inside the "assets" folder and create a folder for every layer, the name of the folder will be the attribute type (Example: "Background" or "Headwear");
