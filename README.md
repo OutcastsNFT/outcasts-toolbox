@@ -3,7 +3,7 @@
 ### This is a ToolBox for creating awesome generative projects on Solana
 Made with love by the Outcasts team ❤️
 
-![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)
+![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/banner.jpeg?token=AWPD7XWRGDT5IQQHXTSVOJTBUOVS6)
 
 This tool was made with inspiration from the hashlips-art-engine.
 ## INSTALLATION
