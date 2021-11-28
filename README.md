@@ -1,5 +1,4 @@
 # Outcasts Toolbox
-****
 ### This is a ToolBox for creating awesome generative projects on Solana
 Made with love by the Outcasts team ❤️
 
@@ -7,7 +6,6 @@ Made with love by the Outcasts team ❤️
 
 This tool was made with inspiration from the hashlips-art-engine.
 ## INSTALLATION
-****
 ### Step 1: Installing the things you need for the program to run
 **Windows**
 - Install GitBash (I recommend using this over powershell or the windows cmd): https://git-scm.com/download/win
@@ -39,7 +37,6 @@ This tool was made with inspiration from the hashlips-art-engine.
 **Now you should have everything set up and ready! :)**
 
 ## USAGE
-****
 ### GENERATION
 
 1) Setting up the layers: Go to the "setup" folder inside "Outcasts-Toolbox" then inside the "assets" folder and create a folder for every layer, the name of the folder will be the attribute type (Example: "Background" or "Headwear");
