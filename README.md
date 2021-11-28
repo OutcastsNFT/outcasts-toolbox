@@ -11,7 +11,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 ### Step 1: Installing the things you need for the program to run
 **Windows**
 - Install GitBash (I recommend using this over powershell or the windows cmd): https://git-scm.com/download/win
-- Install NODE JS (this is so that the program can be ran): you can download it from here. https://nodejs.org/en/download/
+- Install NODE JS (this is so that the program can be ran): you can download it from here: https://nodejs.org/en/download/
 - Install yarn (this is a package manager): 
     1) Right click in any folder and select the "Git Bash Here" option. This will open a Git Bash terminal;
     2) Copy and paste this command:
