@@ -79,7 +79,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 10) The program will automatically close after completion, now enjoy your newly generated NFTs (they all have the metadata automatically generated so you don't have to worry about that); They will be in "Outcasts-Toolbox/exported/NFTs" folder.
 
 ### GETTING A RARITY TABLE
-- Every NFT project should have the rarity table image that the community can check out, to do this on Windows run the "Create Rarity Table.bat" file and wait for it to generate, it will be found inside the "Outcasts-Toolbox/exported/Utils" folder. If you are not on Windows open a terminal inside the "Outcasts-Toolbox" and run this command:
+- Every NFT project should have the rarity table image that the community can check out, to do this on Windows run the "Create Rarity Table.bat" file and wait for it to generate, it will be found inside the "Outcasts-Toolbox/exported/Utils" folder. If you are not on Windows open a terminal inside the "Outcasts-Toolbox" folder and run this command:
     ```sh
     node .\tools\createRarityPreview.js 
     ```
