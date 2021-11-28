@@ -105,6 +105,8 @@ This tool was made with inspiration from the hashlips-art-engine.
 - Made an error when you've written the config metadata for your NFTs? or you came up with better ones? This tool is for fixing that. Write all the variables and their new data inside the "updateMetadataVariables.json" file. 
     It should look somthing like this:
 
+    ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/uniqueInjections.PNG?token=AWPD7XV45W7VEJLE2FYRQG3BUPVE6)
+
 - Keep in mind, if you're changing the name variable it will will look like this: "Outcast #" and it will give this output for example -> "Outcast #1". It modifies the prefix, it allways ending in the iteration number.
 
 ****
