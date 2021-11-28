@@ -88,6 +88,14 @@ This tool was made with inspiration from the hashlips-art-engine.
     
 - Keep in mind you can customize the colors, how many assets are displayed per column (rowsPerColumn) and font sizes inside the "previewConfig.json" file next to "config.json". Feel free to be creative with it! :)
 - You can also go into the createRarityPreview.js file in the "tools" folder and modify the rarity threshholds (line: 51) if you want to set the rarity types to different percentages. (exotic, legendary, epic, etc.)
+
+### INJECTING CUSTOM PIECES
+
+- You might find yourself in the situation when you really want certain attribute combinations to appear in your project without adding it manually and risking duplicates, thats why we added a Custom Piece Injection feature. It will inject the custom unique combinations at random indexes among the collection and will check if it allready exists, in which case it will skip it since it allready exists.
+- To configure the custom pieces you have to go into the "config.json" file and add the combinations inside the "uniquePieces" variable, each unique piece should have the attributes set in the layer order we discussed above and it should follow this convension: "LAYER": "ASSET", for example: ** "Background": "Cyan Sunrise" **. After you are done it should look something like this:
+
+    ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/rarityPreview.png?token=AWPD7XRRLTHOGAXCFHUZDS3BUOWBY)
+
 ****
 ### THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
 
