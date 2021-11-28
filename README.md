@@ -38,7 +38,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 ## USAGE
 
-> IMPORTANT --- All ".bat" files can be found inside the Runnables folder.
+> IMPORTANT --- All ".bat" files can be found inside the "Runnables" folder.
 
 ### GENERATION
 
