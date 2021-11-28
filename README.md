@@ -79,7 +79,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 10) The program will generate all the NFTs then prompt you to press any key to close once its finished, now enjoy your newly generated NFTs (they all have the metadata automatically generated so you don't have to worry about that); They will be in "Outcasts-Toolbox/exported/NFTs" folder.
 
 ### GETTING A RARITY TABLE
-- Every NFT project should have the rarity table image that the community can check out, to do this on Windows run the "Create Rarity Table.bat" file and wait for it to generate, it will be found inside the "Outcasts-Toolbox/exported/Utils" folder. If you are not on Windows open a terminal inside the "Outcasts-Toolbox" folder and run this command:
+- Every NFT project should have the rarity table image that the community can check out, to do this on Windows run the "Generate Rarity Table.bat" file and wait for it to generate, it will be found inside the "Outcasts-Toolbox/exported/Utils" folder. If you are not on Windows open a terminal inside the "Outcasts-Toolbox" folder and run this command:
     ```sh
     node .\tools\createRarityPreview.js 
     ```
@@ -95,7 +95,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 ### INJECTING CUSTOM PIECES
 
 - You might find yourself in the situation when you really want certain attribute combinations to appear in your project without adding it manually and risking duplicates, we know we have! thats why we added a Custom Piece Injection feature. It will inject the custom unique combinations at random indexes among the collection and will check if it has allready been randomly generated, in which case it will skip it since it allready exists.
-- To configure the custom pieces you have to go into the "config.json" file and add the combinations inside the "uniquePieces" variable, each unique piece should have the attributes set in the layer order we discussed above and it should follow this convension: "LAYER": "ASSET", for example: ** "Background": "Cyan Sunrise" **. After you are done it should look something like this:
+- To configure the custom pieces you have to go into the "config.json" file and add the combinations inside the "uniquePieces" variable, each unique piece should have the attributes set in the layer order we discussed above and it should follow this convension: "LAYER": "ASSET", for example: < "Background": "Cyan Sunrise" >. After you are done it should look something like this:
 
     ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/uniqueInjections.PNG?token=AWPD7XV45W7VEJLE2FYRQG3BUPVE6)
 
