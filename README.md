@@ -3,7 +3,7 @@
 ### This is a ToolBox for creating awesome generative projects on Solana
 Made with love by the Outcasts team ❤️
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)]
 
 This tool was made with inspiration from the hashlips-art-engine.
 ## INSTALLATION
