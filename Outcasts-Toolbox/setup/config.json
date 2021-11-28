@@ -1,0 +1,33 @@
+{
+    "exportPath": "default",
+    "nftDescription": "Test NFT",
+    "imageSize": {
+        "width": 2048,
+        "height": 2048
+    },
+    "numberOfNFTs": 100,
+    "assetsOrder": [
+        "Background",
+        "Holster",
+        "Faction",
+        "Tattoo",
+        "Clothes",
+        "Headwear",
+        "Facewear"
+    ],
+    "royaltiesPercentage": 500,
+    "creators": [
+        {
+            "address": "5Hd1wAPqPuLxD3CUdTWYcJWRntW3GnnvJxDbouvFw1kr",
+            "share": 20
+        },
+        {
+            "address": "Aa4GPbMnMYmbDMUPs3T1XKycGQp1RmRYts1NvExa1QkX",
+            "share": 80
+        }
+    ],
+    "collection": {
+        "name": "Outcasts Toolbox Test Collection",
+        "family": "The Outcasts"
+    }
+}

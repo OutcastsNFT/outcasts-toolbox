@@ -1,0 +1,17 @@
+{
+    "titleFontSize": "90px",
+    "textFontSize": "35px",
+    "backgroundColor": "#2b2b2b",
+    "leftBarColor": "#00e5ff",
+    "headerBackgroundColor": "#222222",
+    "textColor": "#ffffff",
+    "nftNameColor": "#cc7400",
+    "rarityColors": {
+        "common": "##b8b8b8",
+        "rare": "#16a300",
+        "epic": "#00e5ff",
+        "legendary": "#e100ff",
+        "exotic": "#fffb00"
+    },
+    "rowsPerColumn": 10
+}
