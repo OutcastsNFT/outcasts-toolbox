@@ -206,6 +206,10 @@ const generateMetadata = async ({ randomEnabled }) => {
     }
     console.log('\nGenerated ', attributesList.length, ' attribute combinations. ', 'Double checking for duplicates...');
     doubleCheckDuplicates(attributesList);
+    console.log('\nPress any key to exit...');
+    process.stdin.setRawMode(true);
+    process.stdin.resume();
+    process.stdin.on('data', process.exit.bind(process, 0));
 }
 
 module.exports = {

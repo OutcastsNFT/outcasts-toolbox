@@ -154,6 +154,10 @@ const executePreviewGeneration = async (rarityData) => {
 const generateRarityPreview = async () => {
     const rarityData = getRarityData();
     await executePreviewGeneration(rarityData);
+    console.log('\nPress any key to exit...');
+    process.stdin.setRawMode(true);
+    process.stdin.resume();
+    process.stdin.on('data', process.exit.bind(process, 0));
 }
 
 generateRarityPreview();
