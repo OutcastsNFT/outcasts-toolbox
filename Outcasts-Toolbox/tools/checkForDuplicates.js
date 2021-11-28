@@ -41,3 +41,7 @@ metadataList.forEach((element) => {
 
 console.log('Has Duplicate been found: ', foundDuplicate, 'checked: ', checkCount, 'times.')
 
+console.log('Press any key to exit...');
+process.stdin.setRawMode(true);
+process.stdin.resume();
+process.stdin.on('data', process.exit.bind(process, 0));
