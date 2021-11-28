@@ -61,7 +61,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 7) Set the "collection" attribute, this is self explanatory.
 
-8) Set the "creators" and "royaltiesPercentage", this is for the royalties, for more info on this check this out: https://medium.com/metaplex/metaplex-metadata-standard-45af3d04b541; The roayltiesPercentage is * 10 so 500 = 5%;
+8) Set the "creators" and "royaltiesPercentage", this is for the royalties, for more info on this check this out: https://medium.com/metaplex/metaplex-metadata-standard-45af3d04b541; The roayltiesPercentage is * 100 so 500 = 5%;
 
 > !!!WARNING!!!
 > 	This is a probability game so if you put for example: 0.1 as rarity and you generate 3333 NFTs, that trait can appear anywhere from 0 times to 3-4 times. So just keep that in mind.
