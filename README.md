@@ -116,6 +116,25 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 - The program will prompt you to press any key to close once it's done, also showing you the variables that have been changed.
 
+## UTILITIES
+
+### CHECKING EXISTING METADATA FOR DUPLICATES
+
+- Basically does the same thing that is double checked after generation. You can use it to verify existing metadata again.
+- To run it if you're on Windows you just run the "Check For Duplicates.bat" file, but if not just go inside the "Outcasts-Toolbox" folder and run this coomand: 
+
+    ```sh
+    node .\tools\checkForDuplicates.js
+    ```
+    
+### PRINTING RARITY DATA AS TEXT
+
+- Use it if you want to check the occurence of the assets without generating the Rarity table, the program will output the occurence of each asset, then the paths of the assets, then the number of NFTs.
+- To run it if you're on Windows you just run the "Print Rarities as Text.bat" file, but if not just go inside the "Outcasts-Toolbox" folder and run this coomand: 
+
+    ```sh
+    node .\tools\seeRarityData.js
+    ```
+
 ****
 ### THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
-
