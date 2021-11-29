@@ -111,7 +111,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 - To run it if you're on Windows you just run the "Update Metadata.bat" file, but if not just go inside the "Outcasts-Toolbox" folder and run this coomand: 
 
     ```sh
-    node .\tools\createRarityPreview.js 
+    node .\tools\updateMetadataVariables.js
     ```
 
 - The program will prompt you to press any key to close once it's done, also showing you the variables that have been changed.
