@@ -30,7 +30,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 ## INSTALLATION
 ### Step 1: Installing the things you need for the program to run
 **Windows**
-- Install GitBash (I recommend using this over powershell or the windows cmd): https://git-scm.com/download/win
+- Install GitBash (I recommend using this over powershell or the Windows cmd): https://git-scm.com/download/win
 - Install NODE JS (this is so that the program can be ran): you can download it from here: https://nodejs.org/en/download/
 - Install yarn (this is a package manager): 
     1) Right click in any folder and select the "Git Bash Here" option. This will open a Git Bash terminal;
@@ -48,7 +48,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 ### Step 2: Setting everything up
 **WINDOWS**
-- We made this very easy, if you are on windows just run the "Install Dependencies.bat" file and let it do its thing, it will automatically close after finishing.
+- We made this very easy, if you are on Windows just run the "Install Dependencies.bat" file and let it do its thing, it will automatically close after finishing.
 
 **MACOS and LINUX**
 - Open a new terminal inside the Outcasts-Toolbox folder and run
@@ -88,8 +88,8 @@ This tool was made with inspiration from the hashlips-art-engine.
 > !!!WARNING!!!
 > 	This is a probability game so if you put for example: 0.1 as rarity and you generate 3333 NFTs, that asset can appear anywhere from 0 times to 3-4 times. So just keep that in mind.
 
-9) Generation: if you are on windows you can simply run the "Start Generation.bat" file, it will prompt you to choose whether to use the rarities you set up in step 3) or to let the program randomly decide the rarities.
-	If you are not on windows, open a terminal in the "Outcasts-Toolbox" folder and run this command:
+9) Generation: if you are on Windows you can simply run the "Start Generation.bat" file, it will prompt you to choose whether to use the rarities you set up in step 3) or to let the program randomly decide the rarities.
+	If you are not on Windows, open a terminal in the "Outcasts-Toolbox" folder and run this command:
 	```sh
 	node index.js
 	```
