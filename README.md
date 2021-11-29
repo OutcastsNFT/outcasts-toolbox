@@ -6,7 +6,7 @@ Made with love by the Outcasts team ❤️
 
 This tool was made with inspiration from the hashlips-art-engine.
 
-# DISCLAIMER --- INTEGRALLY READ THIS TUTORIAL BEFORE USING THE PROGRAM
+> DISCLAIMER --- INTEGRALLY READ THIS TUTORIAL BEFORE USING THE PROGRAM
 
 ## INSTALLATION
 ### Step 1: Installing the things you need for the program to run
