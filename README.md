@@ -5,6 +5,9 @@ Made with love by the Outcasts team ❤️
 ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/banner.jpeg?token=AWPD7XQYSZF2ISTMOQGUNMDBUPVAS)
 
 This tool was made with inspiration from the hashlips-art-engine.
+
+# DISCLAIMER --- INTEGRALLY READ THIS TUTORIAL BEFORE USING THE PROGRAM
+
 ## INSTALLATION
 ### Step 1: Installing the things you need for the program to run
 **Windows**
@@ -126,7 +129,7 @@ This tool was made with inspiration from the hashlips-art-engine.
     ```sh
     node .\tools\checkForDuplicates.js
     ```
-    
+
 ### PRINTING RARITY DATA AS TEXT
 
 - Use it if you want to check the occurence of the assets without generating the Rarity table, the program will output the occurence of each asset, then the paths of the assets, then the number of NFTs.
