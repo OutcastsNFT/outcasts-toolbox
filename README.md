@@ -24,6 +24,8 @@ This tool was made with inspiration from the hashlips-art-engine.
 
     > [PRINTING RARITY DATA AS TEXT](#printing-rarity-data-as-text)
 
+    > [PRINTING RAREST PIECES](#printing-rarest-pieces)
+
 
 ## INSTALLATION
 ### Step 1: Installing the things you need for the program to run
