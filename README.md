@@ -64,7 +64,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 1) Setting up the layers: Go to the "setup" folder inside "Outcasts-Toolbox" then inside the "assets" folder and create a folder for every layer, the name of the folder will be the attribute type (Example: "Background" or "Headwear");
 
-2) Have all the layer folders done? Great! Now open the "config.json" file inside the same "setup" folder with a program la VSCode or Notepad++ and write the order of the layers from back to front,
+2) Have all the layer folders done? Great! Now open the "config.json" file inside the same "setup" folder with a program like VSCode or Notepad++ and write the order of the layers from back to front,
 	it should look something like this:
 
     ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/layersOrder.PNG?token=AWPD7XR46WKU3NTYHWN2VO3BUPVC2)
