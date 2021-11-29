@@ -28,3 +28,8 @@ fs.writeFileSync(
 );
 
 console.log(`Updated '${Object.keys(updatedVariables)}' for metadata in: ${path.join(exportNFTDir, `_metadata.json`)}`);
+
+console.log('\nPress any key to exit...');
+process.stdin.setRawMode(true);
+process.stdin.resume();
+process.stdin.on('data', process.exit.bind(process, 0));
