@@ -12,6 +12,13 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 - [INSTALLATION](#installation)
 - [USAGE](#usage)
+    > [GENERATION](#generation) 
+
+    > [GETTING A RARITY TABLE](#getting-a-rarity-table)
+
+    > [INJECTING CUSTOM PIECES](#injecting-custom-pieces)
+
+    > [UPDATING METADATA VARIABLES](#updating-metadata-variables)
 - [UTILITIES](#utilities)
     > [CHECKING EXISTING METADATA FOR DUPLICATES](#checking-existing-metadata-for-duplicates) 
 
