@@ -8,6 +8,15 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 > DISCLAIMER --- INTEGRALLY READ THIS TUTORIAL BEFORE USING THE PROGRAM
 
+### If you allready read the tutorial and are returning to see a certain section you can jump to it from here:
+
+> [INSTALLATION](#installation)
+> [USAGE](#usage)
+> [UTILITIES](#utilities)
+>   [CHECKING EXISTING METADATA FOR DUPLICATES](#checking-existing-metadata-for-duplicates) 
+>   [PRINTING RARITY DATA AS TEXT](#printing-rarity-data-as-text)
+
+
 ## INSTALLATION
 ### Step 1: Installing the things you need for the program to run
 **Windows**
