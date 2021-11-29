@@ -108,6 +108,13 @@ This tool was made with inspiration from the hashlips-art-engine.
     ![N|Solid](https://raw.githubusercontent.com/OutcastsNFT/outcasts-toolbox/master/exampleImages/uniqueInjections.PNG?token=AWPD7XV45W7VEJLE2FYRQG3BUPVE6)
 
 - Keep in mind, if you're changing the name variable it will will look like this: "Outcast #" and it will give this output for example -> "Outcast #1". It modifies the prefix, it allways ending in the iteration number.
+- To run it if you're on Windows you just run the "Update Metadata.bat" file, but if not just go inside the "Outcasts-Toolbox" folder and run this coomand: 
+
+    ```sh
+    node .\tools\createRarityPreview.js 
+    ```
+
+- The program will prompt you to press any key to close once it's done, also showing you the variables that have been changed.
 
 ****
 ### THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
