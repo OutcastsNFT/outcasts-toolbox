@@ -116,6 +116,8 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 ### INJECTING CUSTOM PIECES
 
+> NOTE --- This must be configured before generating the NFTs!
+
 - You might find yourself in the situation when you really want certain attribute combinations to appear in your project without adding it manually and risking duplicates, we know we have! thats why we added a Custom Piece Injection feature. It will inject the custom unique combinations at random indexes among the collection and will check if it has allready been randomly generated, in which case it will skip it since it allready exists.
 - To configure the custom pieces you have to go into the "config.json" file and add the combinations inside the "uniquePieces" variable, each unique piece should have the attributes set in the layer order we discussed above and it should follow this convension: "LAYER": "ASSET", for example:  "Background": "Cyan Sunrise" . After you are done it should look something like this:
 
