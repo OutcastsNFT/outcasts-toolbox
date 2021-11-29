@@ -156,5 +156,15 @@ This tool was made with inspiration from the hashlips-art-engine.
     node .\tools\seeRarityData.js
     ```
 
+### PRINTING RAREST PIECES
+
+- Use it if you want to see on what NFTs your rarest attributes have been generated.
+- To run it if you're on Windows you just run the "Print Rarest Pieces.bat" file, but if not just go inside the "Outcasts-Toolbox" folder and run this coomand: 
+
+    ```sh
+    node .\tools\getRarestPieces.js
+    ```
+- By default it prints the pieces with an occurence between 1 and 3, if you want to change the upper threshhold (in this case 3), go to the "Outcasts-Toolbox/tools/getRarestPieces.js" on line 7 and chenge it to whatever value you like (must be at least 1). I reccomend using VSCode to do this and remember to save the file with *CTRL + S* before running the command or .bat file again.
+
 ****
 ### THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
