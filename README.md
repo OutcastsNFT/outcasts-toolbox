@@ -1,4 +1,4 @@
-# Outcasts Toolbox
+# Outcasts Toolbox | Part 1
 ### This is a ToolBox for creating awesome generative projects on Solana
 Made with love by the Outcasts team ❤️
 
