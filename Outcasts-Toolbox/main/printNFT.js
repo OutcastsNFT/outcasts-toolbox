@@ -11,7 +11,8 @@ const {
     collection,
     imageSize,
     creators,
-    symbol
+    symbol,
+    name
 } = require(configFile);
 
 const canvas = createCanvas(imageSize.width, imageSize.height);
@@ -19,7 +20,7 @@ const ctx = canvas.getContext('2d');
 
 const handleMetadata = (attributes, index) => {
     const metadata = {
-        name: `#${index + 1}`,
+        name: `${name} #${index + 1}`,
         symbol: symbol,
         description: nftDescription,
         seller_fee_basis_points: royaltiesPercentage,
