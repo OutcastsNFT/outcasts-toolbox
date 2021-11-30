@@ -46,7 +46,13 @@ This tool was made with inspiration from the hashlips-art-engine.
     npm install --global yarn
     ```
 
-### Step 2: Setting everything up
+### Step 2: Cloning the repo
+- Open a GitBash window in the folder you want it to be (the same as we did above to install yarn) and copy and paste this command:
+    ```sh
+    git clone https://github.com/OutcastsNFT/outcasts-toolbox.git
+    ```
+
+### Step 3: Setting everything up
 **WINDOWS**
 - We made this very easy, if you are on Windows just run the "Install Dependencies.bat" file and let it do its thing, it will automatically close after finishing.
 
