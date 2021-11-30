@@ -8,7 +8,16 @@ const updatedVariables = require("../setup/updateMetadataVariables.json");
 let rawMetadata = fs.readFileSync(path.join(exportNFTDir, `_metadata.json`));
 let metadata = JSON.parse(rawMetadata);
 
+function printProgress(index, max) {
+  process.stdout.clearLine();
+  process.stdout.cursorTo(0);
+  process.stdout.write(
+      `Progress: updated --- ${index + 1} / ${max} NFTs`
+  );
+}
+
 metadata.forEach((item) => {
+  const numberOfNFTs = metadata.length;
   Object.keys(updatedVariables).forEach((variableName_) => {
     if (variableName_ === 'name') {
       item[variableName_] = `${updatedVariables[variableName_]}${item.index + 1}`;
@@ -20,6 +29,7 @@ metadata.forEach((item) => {
     path.join(exportNFTDir, `${item.index}.json`),
     JSON.stringify(item, null, 2)
   );
+  printProgress(item.index, numberOfNFTs);
 });
 
 fs.writeFileSync(
