@@ -89,12 +89,18 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 7) Set the "collection" attribute, this is self explanatory.
 
-8) Set the "creators" and "royaltiesPercentage", this is for the royalties, for more info on this check this out: https://medium.com/metaplex/metaplex-metadata-standard-45af3d04b541; The roayltiesPercentage is * 100 so 500 = 5%;
+7) Set the "symbol" attribute, this is the symbol of the NFTs.
+
+8) Set the "external_url" attribute, this will post a link below the description (usually of the website, this is the case for the Phantom Wallet), and on the Pantom Wallet its used to group the NFTs after the domain name, if it doesn't exist, it will group them based on what you put in the "name" attribute, or at least thats the behaviour that we experienced while testing.
+
+9) Set the "name" attribute, this will come before the #NFTNUMBER text.
+
+10) Set the "creators" and "royaltiesPercentage", this is for the royalties, for more info on this check this out: https://medium.com/metaplex/metaplex-metadata-standard-45af3d04b541; The roayltiesPercentage is * 100 so 500 = 5%;
 
 > !!!WARNING!!!
 > 	This is a probability game so if you put for example: 0.1 as rarity and you generate 3333 NFTs, that asset can appear anywhere from 0 times to 3-4 times. So just keep that in mind.
 
-9) Generation: if you are on Windows you can simply run the "Start Generation.bat" file, it will prompt you to choose whether to use the rarities you set up in step 3) or to let the program randomly decide the rarities.
+11) Generation: if you are on Windows you can simply run the "Start Generation.bat" file, it will prompt you to choose whether to use the rarities you set up in step 3) or to let the program randomly decide the rarities.
 	If you are not on Windows, open a terminal in the "Outcasts-Toolbox" folder and run this command:
 	```sh
 	node index.js
@@ -104,7 +110,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 	node index.js --random-rarity-enabled
 	```
 	
-10) The program will generate all the NFTs then prompt you to press any key to close once its finished, now enjoy your newly generated NFTs (they all have the metadata automatically generated so you don't have to worry about that); They will be in the "Outcasts-Toolbox/exported/NFTs" folder.
+12) The program will generate all the NFTs then prompt you to press any key to close once its finished, now enjoy your newly generated NFTs (they all have the metadata automatically generated so you don't have to worry about that); They will be in the "Outcasts-Toolbox/exported/NFTs" folder.
 
 ### GETTING A RARITY TABLE
 - Every NFT project should have the rarity table image that the community can check out, to do this on Windows run the "Generate Rarity Table.bat" file and wait for it to generate, it will be found inside the "Outcasts-Toolbox/exported/Utils" folder. If you are not on Windows open a terminal inside the "Outcasts-Toolbox" folder and run this command:
