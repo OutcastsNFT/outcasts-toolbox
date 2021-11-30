@@ -7,9 +7,11 @@ const { exportNFTDir, configFile } = require("./setupWorkspace");
 const {
     royaltiesPercentage,
     nftDescription,
+    external_url,
     collection,
     imageSize,
     creators,
+    symbol
 } = require(configFile);
 
 const canvas = createCanvas(imageSize.width, imageSize.height);
@@ -18,12 +20,11 @@ const ctx = canvas.getContext('2d');
 const handleMetadata = (attributes, index) => {
     const metadata = {
         name: `#${index + 1}`,
-        symbol: '',
+        symbol: symbol,
         description: nftDescription,
         seller_fee_basis_points: royaltiesPercentage,
         image: `image.png`,
-        animation_url: "",
-        external_url: "",
+        external_url: external_url,
         index,
         attributes,
         generator: "Outcasts Toolbox",
