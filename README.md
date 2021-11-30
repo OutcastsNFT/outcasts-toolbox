@@ -87,7 +87,7 @@ This tool was made with inspiration from the hashlips-art-engine.
 
 6) Set the "nftDescription" to whatever you want. (must be text)
 
-7) Set the "collection" attribute, this is self explanatory.
+7) Set the "collection" attribute, this should group your NFTs when viewing them in the wallet, don't set it to something broad like "art" or something like that.
 
 7) Set the "symbol" attribute, this is the symbol of the NFTs.
 
