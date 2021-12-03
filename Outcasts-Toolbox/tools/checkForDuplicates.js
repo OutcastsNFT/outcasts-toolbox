@@ -15,8 +15,8 @@ function arraysEqual(a1, a2, keyofa1, keyofa2) {
     a1.forEach((element, key) => {
         if (element.value === a2[key].value) count++;
     })
-    if (count > 6 && keyofa1.edition !== keyofa2.edition) {
-        console.log('Found duplicate: ', keyofa1.edition, keyofa2.edition);
+    if (count > 6 && keyofa1.index !== keyofa2.index) {
+        console.log('Found duplicate: ', keyofa1.index, keyofa2.index);
         return true;
     }
     return false;
